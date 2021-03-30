@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document</title>   
     <link rel="stylesheet" href="bootstrap.css"> <!--lägg alla nootstrap efter varandra-->
     <link rel="stylesheet" href="styles.css"> <!--lägg alla nootstrap efter varandra-->
-
 </head>
 <body class="container">
-
+    
  <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
@@ -38,29 +37,42 @@
   </nav>
 
 
-    <div id="products" class="row">
-
-    </div>
-    <!-- /.row -->
-
-
-    </div>
-    <!-- /.col-lg-9 -->
-
-
-
-</div>
-<!-- /.container -->
-
-<!-- Footer -->
-<footer class="py-5 bg-dark">
-  <div class="container">
-    <p class="m-0 text-center text-white">Copyright &copy; Fakestore 2021</p>
+  <div id="product" class="row">
+ 
   </div>
-  <!-- /.container -->
-</footer> 
-    <!--använd outline buttons-->
 
-    <script src="fakestore.js"></script>
+  <div id="error">
+
+  </div>
+
+  <form action="confirmation.html" method="GET" id="form">
+    <div class="form-group">
+        <label for="exampleInputName">Namn</label>
+        <input type="text" class="form-control" id="name" placeholder="">
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputTelephone">Telefon</label>
+        <input type="tel" class="form-control" id="telephone" placeholder="">
+      </div>
+
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email</label>
+      <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="">
+    </div>
+
+    <div class="form-group">
+        <label for="exampleInputPassword1">Adress</label> <!--Kolla upp example name1-->
+        <input type="text" class="form-control" id="address" placeholder="">
+    </div>
+
+    <div class="card-footer text-center"> <!--inte snyggt med card footer-->
+        <button type="submit" class="btn btn-primary w-25" id="beställ">Beställ</button>
+    </div>
+</form>
+
+
+<script src="cart.js"></script>
+
 </body>
 </html>
