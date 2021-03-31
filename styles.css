@@ -3,9 +3,10 @@ body {
   }
 
   .pic {
-    object-fit: cover;
     height: 400px;
     width: 700px;
+    object-fit: contain;
+
   }
   #error {
       color: red;
