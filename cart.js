@@ -9,7 +9,7 @@ const errorEl = document.getElementById("error");
 
 
 form.addEventListener("submit", (e) => {
-    //e.preventDefault()
+  
     let messages = [];
 
     if (customerName.value.trim() === "" || customerName.value == null) {
@@ -32,6 +32,8 @@ form.addEventListener("submit", (e) => {
         e.preventDefault();
         errorEl.innerText = messages.join(", ");
     }
+
+    document.localStorage.clear();
     
 });
 
