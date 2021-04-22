@@ -1,5 +1,6 @@
 
-let endpoint = "https://fakestoreapi.com/products";
+//let endpoint = "https://fakestoreapi.com/products";
+let endpoint = "fakestoreAPI.json";
 
 window.addEventListener("load", load);
 
@@ -25,8 +26,7 @@ function render(products) {
         <h4 class="card-title">
           <a href="#" disabled="disabled">${product.title}</a>
         </h4>
-        <h5>${product.price}</h5>
-        <p class="card-text">${product.description}</p>
+        <h5>${product.price} Kr</h5>
       </div>
       <div class="card-footer text-center">
         <a href="cart.html" class="btn btn-primary w-50" id="${product.id}">Lägg till</a> 
@@ -34,6 +34,10 @@ function render(products) {
     </div>
   </div>
     `));
+  // tog bort  <p class="card-text">${product.description}</p> rad 30
+
+
+
     document.getElementById("products").innerHTML = output; 
     buttons();
 }
