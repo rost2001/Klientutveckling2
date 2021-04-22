@@ -29,7 +29,7 @@ function render(products) {
         <h5>${product.price} Kr</h5>
       </div>
       <div class="card-footer text-center">
-        <a href="cart.html" class="btn btn-primary w-50" id="${product.id}">Lägg till</a> 
+        <a href="cart.html" class="btn btn-primary w-50" id="${product.id}">Köp</a> 
       </div>
     </div>
   </div>
