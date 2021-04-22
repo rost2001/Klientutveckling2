@@ -11,3 +11,7 @@ body {
   #error {
       color: red;
   }
+
+  .card:hover {
+    box-shadow: 0 0 11px rgba(100,100,100,1); 
+  }
